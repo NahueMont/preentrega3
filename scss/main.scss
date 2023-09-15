@@ -1,0 +1,21 @@
+// TIPOGRAFIAS + VARIABLES + COLORES + RESET
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@font-face {
+    font-family: "Titulo";
+    src: url('../resources/Tektur-VariableFont_wdth\,wght.ttf');
+}
+
+// Secciones  
+@import './assets/reset';
+@import './sections/html';
+@import './sections/header';
+@import './sections/main-index';
+@import './sections/main-finales';
+@import './sections/main-previa';
+@import './sections/main-qatar';
+@import './sections/main-coincidencias';
+@import './sections/footer';
+@import './sections/mediaqueries';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

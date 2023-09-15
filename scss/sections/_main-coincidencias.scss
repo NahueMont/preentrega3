@@ -1,0 +1,26 @@
+/* COINCIDENCIAS */
+
+#main-coincidencias {
+    min-height: calc(100vh - 13vh - 14vh);
+    background-image: url(../resources/Coincidencias.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: top;
+    .padre-coincidencias {
+        width: 100%;
+        padding: 50px;
+        .p-container {
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+            p {
+                padding-top: 20px;
+                color: antiquewhite;
+                font-family: "Titulo";
+                font-weight: 500;
+            }
+        }
+    }
+}
+

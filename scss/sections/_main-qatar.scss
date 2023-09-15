@@ -1,0 +1,36 @@
+/* QATAR 2022 */
+
+#main-qatar {
+    min-height: calc(100vh - 13vh - 14vh);
+    background-image: url(../resources/FondoQatar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    .fondoqatar {
+        height: 100%!important;
+        blockquote p{
+            color: --bs-body-color!important;
+        }
+        .sliderqatar{
+            width: 50%!important;
+            margin: auto!important;
+            .carousel-item img{
+                margin: auto!important;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+
+
+.textobatalla {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "Titulo";
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* FIN DE QATAR 2022 */

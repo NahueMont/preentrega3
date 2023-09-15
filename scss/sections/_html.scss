@@ -1,0 +1,17 @@
+html {
+    height: 100%;
+    background-image: url(../resources/fondofinales.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    body {
+        overflow-y: hidden;
+        scrollbar-gutter: stable both-edges; 
+    }
+    .body2 {
+        overflow-y: auto;
+        scrollbar-gutter: stable both-edges;  
+    }
+}
+
+
+

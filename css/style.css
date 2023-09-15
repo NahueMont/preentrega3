@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+@font-face {
+  font-family: "Titulo";
+  src: url("../resources/Tektur-VariableFont_wdth,wght.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  background-image: url(../resources/fondofinales.jpg);
+  background-repeat: repeat;
+  background-size: 100%; }
+  html body {
+    overflow-y: hidden;
+    scrollbar-gutter: stable both-edges; }
+  html .body2 {
+    overflow-y: auto;
+    scrollbar-gutter: stable both-edges; }
+
+/* HEADER BOOTSTRAP */
+.navbar {
+  background: #fcfcfc;
+  background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%);
+  height: 13vh;
+  z-index: 1010;
+  /* HOVER + ACTIVE DEL HEADER */
+  /* FIN HEADER BOOTSTRAP */ }
+  .navbar .smt {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; }
+  .navbar .navbar-nav {
+    text-transform: uppercase;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-family: "Titulo"; }
+  .navbar .nav-link {
+    color: black;
+    text-decoration: none;
+    font-weight: bold; }
+  .navbar .nav-underline .nav-link.active,
+  .navbar .nav-underline .show > .nav-link {
+    font-weight: 700;
+    color: #bd0d0d;
+    border-bottom-color: #bd0d0d; }
+  .navbar .nav-underline .nav-link:hover, .navbar .nav-underline .nav-link:focus {
+    border-bottom-color: currentColor; }
+
+/* INDEX */
+#main-index {
+  background-image: url(../resources/20221203_185725.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  height: 74vh;
+  overflow: hidden; }
+  #main-index .caja-campeones {
+    display: inline;
+    position: sticky;
+    text-align: center;
+    top: 8rem; }
+  #main-index .campeones {
+    color: #0400d4b9;
+    font-family: "Titulo";
+    font-weight: 900;
+    font-size: 4rem; }
+  #main-index .caja-boton {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    text-align: center;
+    top: 300px; }
+  #main-index .caja-boton a {
+    color: white;
+    font-size: 25px;
+    font-family: "Titulo";
+    font-weight: 900;
+    text-decoration: none;
+    border: dashed 2px #00ffff;
+    border-radius: 5px;
+    padding: 5px 30px; }
+
+/* FIN DE INDEX */
+/* FINALES */
+#main-finales {
+  min-height: calc(100vh - 13vh - 14vh);
+  width: 100%; }
+  #main-finales .fondomundiales {
+    background-image: url(../resources/fondofinales.jpg);
+    background-repeat: repeat;
+    background-size: 100%; }
+  #main-finales .card-body {
+    text-align: center;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%); }
+  #main-finales .card-title {
+    color: black;
+    font-weight: bold;
+    font-family: 'Titulo';
+    font-size: 1.1rem; }
+  #main-finales .card-text {
+    font-family: "Titulo";
+    font-size: 0.9rem;
+    font-weight: bold; }
+  #main-finales .btn {
+    background-color: #0062a3;
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: "Titulo";
+    color: white; }
+  #main-finales .text-body-secondary {
+    font-weight: 900;
+    font-size: 1.3rem;
+    font-family: 'Titulo';
+    color: white !important; }
+
+/* FIN DE FINALES */
+/* PREVIA DE LOS MUNDIALES */
+#main-previa {
+  min-height: calc(100vh - 13vh - 14vh);
+  width: 100%; }
+
+.fondoprevia {
+  background-image: url(../resources/LeoBombonera.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: bottom;
+  margin: auto; }
+  .fondoprevia .caja-contprevia {
+    height: 40%;
+    padding: 3rem 0 0;
+    display: block;
+    flex-wrap: wrap;
+    position: relative; }
+    .fondoprevia .caja-contprevia h2 {
+      margin: 0;
+      display: flex;
+      color: #fcfcfc;
+      font-size: 3rem;
+      font-family: 'Titulo';
+      font-weight: 900;
+      text-align: center;
+      justify-content: center; }
+  .fondoprevia .calendar-container {
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%);
+    overflow: hidden;
+    width: 100%;
+    max-width: 30rem;
+    box-shadow: 0 2px 20px darkslategrey;
+    border-radius: 10px;
+    margin: auto; }
+    .fondoprevia .calendar-container .calendar-header {
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid black; }
+      .fondoprevia .calendar-container .calendar-header h1 {
+        font-size: 1.1rem;
+        margin: 0;
+        color: black;
+        font-weight: bold;
+        font-family: 'Titulo'; }
+      .fondoprevia .calendar-container .calendar-header p {
+        font-size: 0.8rem;
+        margin: 5px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Titulo'; }
+    .fondoprevia .calendar-container .calendar {
+      display: grid;
+      width: 100%;
+      grid-template-columns: repeat(7, minmax(3.037rem, 1fr));
+      grid-row: 1.8rem;
+      grid-auto-rows: 2.8rem;
+      font-family: 'Titulo'; }
+      .fondoprevia .calendar-container .calendar .day-name {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #221f1f;
+        text-align: center;
+        line-height: 2.8rem;
+        font-weight: bold;
+        border-bottom: 1px solid black; }
+      .fondoprevia .calendar-container .calendar .day {
+        font-style: italic;
+        text-align: right;
+        padding: 0.9rem 1.2rem;
+        border-bottom: 1px solid black;
+        border-right: 1px solid black;
+        font-size: 0.95rem;
+        color: black;
+        font-weight: bold; }
+      .fondoprevia .calendar-container .calendar .day-disabled {
+        cursor: not-allowed;
+        color: rgba(255, 255, 255, 0.356); }
+      .fondoprevia .calendar-container .calendar .diacampeon {
+        font-weight: 900;
+        font-size: 20px;
+        text-align: center; }
+        .fondoprevia .calendar-container .calendar .diacampeon a {
+          text-decoration: none !important;
+          color: red !important;
+          text-align: center; }
+
+.day:nth-of-type(7n + 7) {
+  border-right: none; }
+
+.diacampeon:hover {
+  background-color: #02008d;
+  text-decoration: none;
+  text-align: center; }
+
+.diacampeon a:hover {
+  text-decoration: none !important;
+  color: #fdfdfd !important;
+  text-align: center; }
+
+/* FIN DE PREVIA DE LOS MUNDIALES */
+/* QATAR 2022 */
+#main-qatar {
+  min-height: calc(100vh - 13vh - 14vh);
+  background-image: url(../resources/FondoQatar.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed; }
+  #main-qatar .fondoqatar {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly; }
+    #main-qatar .fondoqatar .containerbatalla {
+      gap: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-top: 15px; }
+
+.textobatalla {
+  color: white;
+  font-size: 25px;
+  font-family: "Titulo";
+  font-weight: 900;
+  text-align: center;
+  padding-bottom: 15px; }
+
+.videobatalla {
+  top: 130px;
+  left: 500px; }
+
+.videobatalla video {
+  height: 300px;
+  display: flex;
+  width: 300px; }
+
+.imageneslusail {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  justify-content: space-between;
+  gap: 80px; }
+
+.imageneslusail img {
+  max-width: 200px; }
+
+/* FIN DE QATAR 2022 */
+/* COINCIDENCIAS */
+#main-coincidencias {
+  min-height: calc(100vh - 13vh - 14vh);
+  background-image: url(../resources/Coincidencias.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position-y: top; }
+  #main-coincidencias .padre-coincidencias {
+    width: 100%;
+    padding: 50px; }
+    #main-coincidencias .padre-coincidencias .p-container {
+      font-size: 20px;
+      text-align: center;
+      justify-content: center; }
+      #main-coincidencias .padre-coincidencias .p-container p {
+        padding-top: 20px;
+        color: antiquewhite;
+        font-family: "Titulo";
+        font-weight: 500; }
+
+/* FIN DE COINCIDENCIAS */
+/* FOOTER */
+.footer {
+  height: 14vh;
+  background: #fcfcfc;
+  background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%);
+  padding-bottom: 1rem; }
+  .footer .card-body {
+    text-align: center;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%); }
+  .footer .card-title {
+    color: black;
+    font-weight: bold;
+    font-family: 'Titulo';
+    font-size: 1.1rem; }
+  .footer .card-text {
+    font-family: "Titulo";
+    font-size: 0.9rem;
+    font-weight: bold; }
+
+/* FIN DEL FOOTER */
+/* MEDIA QUERIES */
+@media (max-width: 991px) {
+  body {
+    -webkit-overflow-scrolling: touch;
+    max-height: 100vh;
+    overflow: scroll; }
+  .navbar .navbar-toggler {
+    background-color: #0263a3; }
+  .navbar .navbar-nav {
+    background-color: #0263a3; }
+  .navbar .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer {
+    height: 13vh;
+    bottom: 0;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%); }
+  #main-index .caja-campeones {
+    display: inline;
+    position: fixed;
+    text-align: center;
+    top: 10rem;
+    background-color: transparent; }
+  #main-index .campeones {
+    color: #0263A3;
+    font-family: 'Titulo';
+    font-weight: 900;
+    font-size: 4.063rem; }
+  #main-coincidencias {
+    min-height: calc(100vh - 13vh - 13vh);
+    background-image: url(../resources/Coincidencias.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: top; }
+  .fondoprevia {
+    background-image: url(../resources/LeoBombonera.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-position-y: center; }
+  .calendar-container {
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%);
+    overflow: hidden;
+    width: 100%;
+    max-width: 25rem;
+    box-shadow: 0 2px 20px darkslategrey;
+    border-radius: 10px;
+    margin: 3rem auto; }
+  .calendar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(7, minmax(2rem, 1fr));
+    grid-row: 1.2rem;
+    grid-auto-rows: 2.8rem; } }
+
+@media (max-width: 614px) {
+  html body {
+    -webkit-overflow-scrolling: touch;
+    max-height: 100vh;
+    overflow: scroll; }
+  .navbar .navbar-toggler {
+    background-color: #0263a3; }
+  .navbar .navbar-nav {
+    background-color: #0263a3; }
+  .navbar .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold; }
+  .footer {
+    height: 13vh;
+    bottom: 0;
+    background: #fcfcfc;
+    background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%); }
+  #main-index .caja-campeones {
+    display: inline;
+    position: fixed;
+    text-align: center;
+    top: 7rem;
+    background-color: transparent; }
+  #main-index .campeones {
+    color: #0263A3;
+    font-family: 'Titulo';
+    font-weight: 900;
+    font-size: 4.063rem; }
+  #main-previa {
+    overflow: scroll; }
+    #main-previa .calendar-container {
+      background: #fcfcfc;
+      background: linear-gradient(90deg, #fcfcfc 0%, #338383 88%, #115c6b 100%);
+      overflow: hidden;
+      width: 80%;
+      max-width: 30rem;
+      box-shadow: 0 2px 20px darkslategrey;
+      border-radius: 10px;
+      margin: 1rem auto; }
+      #main-previa .calendar-container .calendar {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(7, minmax(2rem, 1fr));
+        grid-row: 1.2rem;
+        grid-auto-rows: 2.5rem; }
+  #main-coincidencias {
+    min-height: calc(100vh - 13vh - 13vh);
+    background-image: url(../resources/Coincidencias.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position-y: top; } }
